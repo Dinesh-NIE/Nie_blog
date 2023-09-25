@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="wrap">
+<div id="header">
+
+<h1><a href="#">ICMR</a></h1>
+<h2>NIE</h2>
+
+</div>
+
+<div class="middle">
+			
+<h2>Articles</h2>
+			
+<%= yield %>
+ 		
+</div>
+		
+<div class="right">
+		
+<h2>Navigation</h2>
+
+<ul>
+
+<li><a href="http://nie.gov.in">NIE Design</a></li>
+
+
+</ul>
+		
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="footer">
+Design by <a href="http://nie.gov.in">NIE Design 2023</a>
+</div>
+    
+  </body>
+</html>
